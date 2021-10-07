@@ -1,0 +1,115 @@
+[
+    {
+        "name": "Home",
+        "type_page": "page",
+        "url": "index.html",
+        "post_numbers": 0
+    },
+    {
+        "name": "Awareness",
+        "type_page": "category",
+        "url": "awareness.html",
+        "post_numbers": 4,
+        "category": [
+            {
+                "name": "Alphabets",
+                "post_numbers": 1,
+                "url": "awareness.html?alphabet"
+            },
+            {
+                "name": "Animals",
+                "post_numbers": 1,
+                "url": "awareness.html?animal"
+            },
+            {
+                "name": "Colours",
+                "post_numbers": 1,
+                "url": "awareness.html?color"
+            },
+            {
+                "name": "Date time",
+                "post_numbers": 1,
+                "url": "awareness.html?time"
+            }
+        ]
+    },
+    {
+        "name": "Maths",
+        "type_page": "page",
+        "url": "maths.html",
+        "post_numbers": 1
+    },
+    {
+        "name": "Physical",
+        "type_page": "category",
+        "url": "physical.html",
+        "post_numbers": 299,
+        "category": [
+            {
+                "name": "Nutrition",
+                "post_numbers": 199,
+                "url": "physical.html?nutrition"
+            },
+            {
+                "name": "Exercise",
+                "post_numbers": 100,
+                "url": "physical.html?exercise"
+            }
+        ]
+    },
+    {
+        "name": "Videos",
+        "type_page": "category",
+        "url": "videos.html",
+        "post_numbers": 57,
+        "category": []
+    },
+    {
+        "name": "Events",
+        "type_page": "page",
+        "url": "events.html",
+        "post_numbers": 1
+    },
+    {
+        "name": "Community",
+        "type_page": "page",
+        "url": "community.html",
+        "post_numbers": 999
+    },
+    {
+        "name": "About Us",
+        "type_page": "page",
+        "url": "about-us.html",
+        "post_numbers": 1
+    },
+    {
+        "name": "Advise",
+        "type_page": "page",
+        "url": "advise.html",
+        "post_numbers": 1
+    },
+    {
+        "name": "Gallery",
+        "type_page": "page",
+        "url": "gallery.html",
+        "post_numbers": 1
+    },
+    {
+        "name": "Site Maps",
+        "type_page": "page",
+        "url": "sitemap.html",
+        "post_numbers": 1
+    },
+    {
+        "name": "Contact",
+        "type_page": "page",
+        "post_numbers": 1,
+        "url": "contact.html"
+    },
+    {
+        "name": "Singup / Login",
+        "type_page": "page",
+        "post_numbers": 1,
+        "url": "user.html"
+    }
+]

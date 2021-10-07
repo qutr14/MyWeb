@@ -1,0 +1,185 @@
+<div class="container">
+    <div class="logo">
+        <a href="index.html" title="Kids Life">
+            <img class="normal_logo" src="./img/logo/logo.png" alt="Kids Life" title="Kids Life" />
+        </a>
+    </div>
+
+    <div class="input-group mb-3 search-box">
+        <input type="text" class="form-control" placeholder="Search..." aria-label="Search" aria-describedby="basic-addon1">
+        <span><i class="fas fa-search"></i></span>
+    </div>
+
+    <div class="header-more-info contact-details">
+        <div class="top-right">
+            <p class="dt-sc-contact-info"><a href="mailto:support@kidszone.com">support@kidszone.com</a><i
+                    class="far fa-envelope"></i></p>
+            <p class="dt-sc-contact-info">+1 123.456.789<i class="fas fa-phone-alt"></i></p>
+        </div>
+    </div>
+</div>
+
+<!--menu-container starts-->
+<div id="menu-container-sticky-wrapper" class="sticky-wrapper">
+    <div id="menu-container">
+        <div class="container">
+            <!-- ** Navigation Starts ** -->
+            <nav id="main-menu">
+                <div class="dt-menu-toggle" id="dt-menu-toggle">
+                    <div class="logo">
+                        <a href="index.html" title="Kids Life">
+                            <img class="normal_logo" src="./img/logo/logo.png" alt="Kids Life" title="Kids Life" />
+                            <span>Kids Zone</span>
+                        </a>
+                    </div>
+                    <i class="fas fa-times"></i>
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul id="menu-main-menu" class="menu">
+                    <li
+                        class="red menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-71 current_page_item menu-item-has-children menu-item-depth-0 menu-item-simple-parent">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li
+                        class="mustard menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-depth-0 menu-item-simple-parent">
+                        <a href="awareness.html">Awareness</a><i class="fas fa-sort-down"></i>
+                        <ul class="sub-menu">
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-depth-1">
+                                <a href="awareness.html?alphabet">Alphabets</a>
+                            </li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-depth-1">
+                                <a href="awareness.html?animal">Animals</a>
+                            </li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-depth-1">
+                                <a href="awareness.html?color">Colours</a>
+                            </li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-depth-1">
+                                <a href="awareness.html?time">Date Time</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li
+                        class="green menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-depth-0 menu-item-simple-parent">
+                        <a href="maths.html">Maths</a>
+                    </li>
+                    <li
+                        class="yellow menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-depth-0 menu-item-simple-parent">
+                        <a href="physical.html">Physical</a><i class="fas fa-sort-down"></i>
+                        <ul class="sub-menu">
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-depth-1">
+                                <a href="physical.html?nutrition">Nutrition</a>
+                            </li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-depth-1">
+                                <a href="physical.html?exercise">Exercise</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li
+                        class="orange menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-depth-0 menu-item-simple-parent">
+                        <a href="videos.html">Videos</a>
+                    </li>
+                    <li id="menu-item-143"
+                        class="blue menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-depth-0 menu-item-simple-parent">
+                        <a href="events.html">Events</a>
+                    </li>
+                    <li
+                        class="steelblue menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-depth-0 menu-item-megamenu-parent megamenu-4-columns-group">
+                        <a href="community.html">Community</a>
+                    </li>
+                    <li
+                        class="lavender menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-depth-0 menu-item-simple-parent">
+                        <a>Pages</a><i class="fas fa-sort-down"></i>
+                        <ul class="sub-menu">
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-depth-1">
+                                <a href="about-us.html">About Us</a>
+                            </li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-depth-1">
+                                <a href="advise.html">Advise</a>
+                            </li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-depth-1">
+                                <a href="gallery.html">Gallery</a>
+                            </li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-depth-1">
+                                <a href="sitemap.html">Site Maps</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li
+                        class="purple menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-depth-0 menu-item-simple-parent">
+                        <a href="contact.html">Contact</a>
+                    </li>
+                    <li class="url-user">
+                        <a href="user.html">Singup / Login</a>
+                        <div class="search-box search-box-2">
+                            <input type="text" class="form-control search-mobile" placeholder="Search..." aria-label="Search"   aria-describedby="basic-addon1"><span><i class="fas fa-search"></i></span>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="dt-sc-social-icons">
+                <li>
+                    <a class="dt-sc-tooltip-top facebook" title="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                        <span><i class="fab fa-facebook-f"></i></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="user.html" class="dt-sc-tooltip-top technorati" title="User">
+                        <i class="fas fa-user"></i>
+                        <span><i class="fas fa-user"></i></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script>
+    $("#main-menu .dt-menu-toggle i.fa-bars").click(function() {
+		$("#main-menu #menu-main-menu").attr("style", "clip-path: circle(100%);");
+        $("#main-menu .dt-menu-toggle i.fa-bars").attr("style", "display:none;");
+        $("#main-menu .dt-menu-toggle i.fa-times").attr("style", "display:block;");
+	});
+
+    $("#main-menu .dt-menu-toggle i.fa-times").click(function() {
+		$("#main-menu #menu-main-menu").attr("style", "");
+        $("#main-menu .dt-menu-toggle i.fa-bars").attr("style", "display:block;");
+        $("#main-menu .dt-menu-toggle i.fa-times").attr("style", "display:none;");
+	});
+
+    $(".search-box span").click(function() {
+        var textSearch = $(".search-box input").val();
+        textSearch = textSearch.toLowerCase();
+        textSearch = textSearch.replace(/ /g, "-");
+        textSearch = removeAccents(textSearch);
+        var url = "./search.html?search=" + textSearch;
+        window.location.href = url;
+    });
+
+    $(".search-box-2 span").click(function() {
+        var textSearch = $(".search-box-2 input").val();
+        textSearch = textSearch.toLowerCase();
+        textSearch = textSearch.replace(/ /g, "-");
+        textSearch = removeAccents(textSearch);
+        var url = "./search.html?search=" + textSearch;
+        window.location.href = url;
+    });
+
+    function removeAccents(str) {
+        var AccentsMap = [
+            "aàảãáạăằẳẵắặâầẩẫấậ",
+            "dđ",
+            "eèẻẽéẹêềểễếệ",
+            "iìỉĩíị",
+            "oòỏõóọôồổỗốộơờởỡớợ",
+            "uùủũúụưừửữứự",
+            "yỳỷỹýỵ"
+        ];
+        for (var i = 0; i < AccentsMap.length; i++) {
+            var re = new RegExp('[' + AccentsMap[i].substr(1) + ']', 'g');
+            var char = AccentsMap[i][0];
+            str = str.replace(re, char);
+        }
+        return str;
+    }
+</script>

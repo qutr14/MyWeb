@@ -1,0 +1,52 @@
+[
+    {
+        "name": "crocodile",
+        "img": "./img/post/animal/crocodile.jpg",
+        "mp3": "./video/animal/crocodile.mp3"
+    },
+    {
+        "name": "duck",
+        "img": "./img/post/animal/duck.jpg",
+        "mp3": "./video/animal/duck.mp3"
+    },
+    {
+        "name": "dove",
+        "img": "./img/post/animal/dove.jpg",
+        "mp3": "./video/animal/dove.mp3"
+    },
+    {
+        "name": "frog",
+        "img": "./img/post/animal/frog.jpg",
+        "mp3": "./video/animal/frog.mp3"
+    },
+    {
+        "name": "lizard",
+        "img": "./img/post/animal/lizard.jpg",
+        "mp3": "./video/animal/lizard.mp3"
+    },
+    {
+        "name": "scorpion",
+        "img": "./img/post/animal/scorpion.jpg",
+        "mp3": "./video/animal/scorpion.mp3"
+    },
+    {
+        "name": "snail",
+        "img": "./img/post/animal/snail.jpg",
+        "mp3": "./video/animal/snail.mp3"
+    },
+    {
+        "name": "tortoise",
+        "img": "./img/post/animal/tortoise.jpg",
+        "mp3": "./video/animal/tortoise.mp3"
+    },
+    {
+        "name": "snake",
+        "img": "./img/post/animal/snake.jpg",
+        "mp3": "./video/animal/snake.mp3"
+    },
+    {
+        "name": "turtle",
+        "img": "./img/post/animal/turtle.jpg",
+        "mp3": "./video/animal/turtle.mp3"
+    }    
+]

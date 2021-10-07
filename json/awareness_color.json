@@ -1,0 +1,79 @@
+[
+  {
+    "color": "black",
+    "mp3": "./video/color/black.mp3",
+    "id": 1,
+    "background": "",
+    "content": ""
+  },
+  {
+    "color": "blue",
+    "mp3": "./video/color/blue.mp3",
+    "id": 2,
+    "background": "",
+    "content": ""
+  },
+  {
+    "color": "brown",
+    "mp3": "./video/color/brown.mp3",
+    "id": 3,
+    "background": "",
+    "content": ""
+  },
+  {
+    "color": "green",
+    "mp3": "./video/color/green.mp3",
+    "id": 4,
+    "background": "",
+    "content": ""
+  },
+  {
+    "color": "grey",
+    "mp3": "./video/color/grey.mp3",
+    "id": 5,
+    "background": "",
+    "content": ""
+  },
+  {
+    "color": "orange",
+    "mp3": "./video/color/orange.mp3",
+    "id": 6,
+    "background": "",
+    "content": ""
+  },
+  {
+    "color": "pink",
+    "mp3": "./video/color/pink.mp3",
+    "id": 7,
+    "background": "",
+    "content": ""
+  },
+  {
+    "color": "purple",
+    "mp3": "./video/color/purple.mp3",
+    "id": 8,
+    "background": "",
+    "content": ""
+  },
+  {
+    "color": "red",
+    "mp3": "./video/color/red.mp3",
+    "id": 9,
+    "background": "",
+    "content": ""
+  },
+  {
+    "color": "yellow",
+    "mp3": "./video/color/yellow.mp3",
+    "id": 10,
+    "background": "",
+    "content": ""
+  },
+  {
+    "color": "white",
+    "mp3": "./video/color/white.mp3",
+    "id": 11,
+    "background": "",
+    "content": ""
+  }
+]

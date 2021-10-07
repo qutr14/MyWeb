@@ -1,0 +1,19 @@
+<div class="content-blog">
+	<div class="post-header">
+		<div class="post-header-bg" style="background-image: url('./img/banner/forum_banner.jpg')"></div>
+		<div class="post-header-info"><span><img src="{{article.admin_img}}">{{article.writer}}</span><span
+				class="post-header-right"><span class="post-header-date">{{article.date_post}}</span><span
+					class="post-header-comment">{{article.view}}<i class="fa fa-eye" aria-hidden="true"></i></span></span></div>
+	</div>
+	<div class="post-content">
+		<h2 class="article-title">{{article.title}}</h2>
+		<p class="article-detail">{{article.post_content}}</p>
+	</div>
+	
+	<div class="reply-detail">
+		<hr/>
+		<h3>Reply for this topic</h3>
+		<div><b><i class="fa fa-users" aria-hidden="true"></i> {{article.reply_info[0].reply_writer}} | <span>{{article.reply_info[0].date_reply}}</span></b>
+		<p>&nbsp;&nbsp;{{article.reply_info[0].reply_content}}</p></div>
+	</div>
+</div>	

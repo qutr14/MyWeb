@@ -1,0 +1,82 @@
+[
+    {
+        "img": "./img/gallery/portfolio_01.jpg",
+        "datagal": "prettyPhoto[gallery]",
+        "class": "zoom"
+    },
+    {
+        "img": "./img/gallery/portfolio_02.jpg",
+        "datagal": "prettyPhoto[gallery]",
+        "class": "vertical"
+    },
+    {
+        "img": "./img/gallery/portfolio_03.jpg",
+        "datagal": "prettyPhoto[gallery]",
+        "class": "horizontal"
+    },
+    {
+        "img": "./img/gallery/portfolio_04.jpg",
+        "datagal": "prettyPhoto[gallery]",
+        "class": "zoom"
+    },
+    {
+        "img": "./img/gallery/portfolio_05.jpg",
+        "datagal": "prettyPhoto[gallery]",
+        "class": "zoom"
+    },
+    {
+        "img": "./img/gallery/portfolio_06.jpg",
+        "datagal": "prettyPhoto[gallery]",
+        "class": "big"
+    },
+    {
+        "img": "./img/gallery/portfolio_07.jpg",
+        "datagal": "prettyPhoto[gallery]",
+        "class": "zoom"
+    },
+    {
+        "img": "./img/gallery/portfolio_08.jpg",
+        "datagal": "prettyPhoto[gallery]",
+        "class": "vertical"
+    },
+    {
+        "img": "./img/gallery/portfolio_09.jpg",
+        "datagal": "prettyPhoto[gallery]",
+        "class": "zoom"
+    },
+    {
+        "img": "./img/gallery/portfolio_10.jpg",
+        "datagal": "prettyPhoto[gallery]",
+        "class": "horizontal"
+    },
+    {
+        "img": "./img/gallery/portfolio_11.jpg",
+        "datagal": "prettyPhoto[gallery]",
+        "class": "zoom"
+    },
+    {
+        "img": "./img/gallery/portfolio_12.jpg",
+        "datagal": "prettyPhoto[gallery]",
+        "class": "big"
+    },
+    {
+        "img": "./img/gallery/portfolio_13.jpg",
+        "datagal": "prettyPhoto[gallery]",
+        "class": "vertical"
+    },
+    {
+        "img": "./img/gallery/portfolio_14.jpg",
+        "datagal": "prettyPhoto[gallery]",
+        "class": "vertical"
+    },
+    {
+        "img": "./img/gallery/portfolio_15.jpg",
+        "datagal": "prettyPhoto[gallery]",
+        "class": "zoom"
+    },
+    {
+        "img": "./img/gallery/portfolio_16.jpg",
+        "datagal": "prettyPhoto[gallery]",
+        "class": "zoom"
+    }
+]

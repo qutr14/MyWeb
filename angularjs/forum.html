@@ -1,0 +1,25 @@
+<div class="row" ng-repeat="article in articleList">
+	<div class="col-12 col-md-7 article-info-left">
+		<div class="img-container" width="48"><img width="48" src="{{article.admin_img}}"></div>
+		<div class="writer-info">
+			<a href="#!/{{article.id}}"><h5>{{article.title}}</h5></a>
+			<p>{{article.writer}} | {{article.date_post}}</p>
+		</div>
+	</div>
+	<div class="col-12 col-md-5 article-info-right">
+		<div class="view-reply">
+			<div class="view-reply-details">
+				<p>Reply: {{article.reply_num}}</p>
+				<p>View: {{article.view}}</p>
+			</div>
+			<div class="user-info">
+				<b>{{article.reply_info[0].date_reply}}</b>
+				<p>{{article.reply_info[0].reply_writer}}</p>
+			</div>
+		</div>
+		<div class="img-container">
+			<img width="37" src="{{article.reply_info[0].user_img}}">
+		</div>
+	</div>
+</div>
+

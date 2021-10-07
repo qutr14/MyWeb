@@ -1,0 +1,145 @@
+<div class="footer-widgets-wrapper">
+	<div class="container">
+		<div class="row">
+			<div class="dt-sc-one-fourth first col-md-4">
+				<aside class="widget widget_text widget_text_1">
+					<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-widget elementor-widget-image">
+							<div class="elementor-widget-container">
+								<div class="elementor-image">
+									<img src="./img/logo/logo.png" title="" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="elementor-element elementor-widget elementor-widget-text-editor">
+							<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+									<p>Come visit <span>Kids Zone</span> for yourself so you
+										can tour the rooms and meet some of our educators. We offer high Quality early
+										education.</p>
+								</div>
+							</div>
+						</div>
+						<div class="elementor-element elementor-widget elementor-widget-social-icons">
+							<div class="elementor-widget-container">
+								<div class="elementor-social-icons-wrapper elementor-grid">
+									<span><i class="fab fa-facebook-f"></i></span>
+									<span><i class="fab fa-youtube"></i></span>
+									<span><i class="fab fa-pinterest-p"></i></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</aside>
+			</div>
+			<div class="dt-sc-one-fourth col-md-4">
+				<aside class="widget widget_text widget_text_2">
+					<div class="elementor-widget-wrap">
+						<h5 class="elementor-heading-title">Our Contacts</h5>
+						<div class="elementor-element elementor-widget elementor-widget-text-editor">
+							<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+									<div class="list-contact-footer">
+										<img src="./img/logo/contacts_icon_01.png" class="img-contact-footer" alt=""
+											title="">
+										<p class="txt-contact-footer">27 Division St, New York, NY 10002, USA</p>
+									</div>
+									<div class="list-contact-footer">
+										<img src="./img/logo/contacts_icon_02.png" class="img-contact-footer" alt=""
+											title="">
+										<p class="txt-contact-footer">+1 123.456.789 1<br>+1 123.456.789 2</p>
+									</div>
+									<div class="list-contact-footer">
+										<img src="./img/logo/contacts_icon_03.png" class="img-contact-footer" alt=""
+											title="">
+										<p class="txt-contact-footer">support@kidszone.com</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</aside>
+			</div>
+			<div class="dt-sc-one-fourth col-md-4">
+				<aside class="widget widget_text widget_text_3">
+					<div class="elementor-widget-wrap">
+						<h5 class="elementor-heading-title">Our Gallery</h5>
+						<div class="elementor-element elementor-widget elementor-widget-gallery">
+							<div class="elementor-widget-container">
+								<div class="gallery-size-thumbnail">
+									<a href="gallery.html"><img src="./img/gallery/portfolio_01.jpg" alt="" title=""></a>
+									<a href="gallery.html"><img src="./img/gallery/portfolio_02.jpg" alt="" title=""></a>
+									<a href="gallery.html"><img src="./img/gallery/portfolio_03.jpg" alt="" title=""></a>
+									<a href="gallery.html"><img src="./img/gallery/portfolio_04.jpg" alt="" title=""></a>
+									<a href="gallery.html"><img src="./img/gallery/portfolio_05.jpg" alt="" title=""></a>
+									<a href="gallery.html"><img src="./img/gallery/portfolio_06.jpg" alt="" title=""></a>
+									<a href="gallery.html"><img src="./img/gallery/portfolio_07.jpg" alt="" title=""></a>
+									<a href="gallery.html"><img src="./img/gallery/portfolio_08.jpg" alt="" title=""></a>
+									<a href="gallery.html"><img src="./img/gallery/portfolio_09.jpg" alt="" title=""></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</aside>
+			</div>
+			<div class="dt-sc-one-fourth col-md-4">
+				<aside class="widget widget_text widget_text_4">
+					<div class="elementor-widget-wrap">
+						<h5 class="elementor-heading-title">Our Follows</h5>
+						<div class="elementor-element elementor-widget elementor-widget-app">
+							<div class="elementor-widget-container">
+								<div class="app-store-thumbnail">
+									<div><img src="./img/logo/footer-dmca.jpg" alt="" title=""></div>
+									<div><img src="./img/logo/download-app-appstore.jpg" alt="" title="">
+										<img src="./img/logo/download-app-chplay.jpg" alt="" title="">
+									</div>
+									<label>Receive newsletter by email</label>
+									<input type="email" placeholder="example@gmail.com">
+									<button type="button" class="btn btn-block create-account" data-bs-toggle="modal"
+										data-bs-target="#formRegEvent">OK</button>
+									<script>
+										$(".app-store-thumbnail button").click(function () {
+											$(".modal-body").html("");
+											var contentInput = $(".app-store-thumbnail input").val();
+											var count = CheckInputMail(contentInput);
+											var mess = "";
+											if (count == 0) {
+												mess = '<h6>Fail!!!</h6><p>Invalid email</p>';
+											} else {
+												mess = '<h6>Success!!!</h6><p>Thank you for subscribing</p>';
+											}
+											$(".modal-body").html(mess);
+											$(".app-store-thumbnail input").val("");
+										});
+									</script>
+								</div>
+							</div>
+						</div>
+					</div>
+				</aside>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="copyright">
+	<div class="container">
+		<div class="copyright-info">Copyright &copy; 2021 Kids Zone. Design by <a><strong>Group 5</strong></a></div>
+	</div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="formRegEvent" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">Notification</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>

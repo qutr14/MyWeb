@@ -1,0 +1,286 @@
+<aside class="sidebar sticked-sidebar">
+    <div class="registration-form">
+        <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
+                    type="button" role="tab" aria-controls="nav-home" aria-selected="true">Login</button>
+                <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+                    type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Sign Up</button>
+                <button class="nav-link hidden" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">User</button>
+            </div>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                <div class="form-login">
+                    <h5 class="h-text">Login</h5>
+                    <div class="form-icon">
+                        <span><i class="fas fa-street-view"></i></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control item" id="username" placeholder="Username / Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control item" id="password" placeholder="Password" required>
+                    </div>
+                    <div class="form-group">
+                        <button type="button" class="btn btn-block create-account" data-bs-toggle="modal"
+                        data-bs-target="#formRegEvent">Login</button>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                <div class="form-reg">
+                    <h5 class="h-text">Sign Up</h5>
+                    <div class="form-icon">
+                        <span><i class="fas fa-smile"></i></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control item" id="username" placeholder="Username" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control item" id="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control item" id="password" placeholder="Password" required>
+                    </div>
+                    <div class="form-group">
+                        <button type="button" class="btn btn-block create-account" data-bs-toggle="modal"
+                            data-bs-target="#formRegEvent">Register</button>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade hidden" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                <div class="form-user">
+                    <div class="form-icon">
+                        <span><i class="fas fa-user-shield"></i></span>
+                    </div>
+                    <div class="hello-user">
+                        <p>Hello <span id="name-user"></span>,</p>
+                        <p>Welcome to <strong>Kids Zone</strong></p>
+                    </div>
+                    <div class="form-group">
+                        <button type="button" class="btn btn-block create-account">Logout</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            $(".form-reg button").click(function () {
+                $(".modal-body").html("");
+                var txtName = $(".form-reg input#username").val();
+                var checkFailName = false;
+                if (txtName == "") {
+                    checkFailName = true;
+                }
+                var contentMail = $(".form-reg input#email").val();
+                var count = CheckInputMail(contentMail);
+                var checkFailMail = false;
+                if (count == 0) {
+                    checkFailMail = true;
+                }
+                var txtPass = $(".form-reg input#password").val();
+                var checkFailPass = false;
+                if (txtPass == "") {
+                    checkFailPass = true;
+                }
+                var Mess = '';
+                if (checkFailName == true || checkFailMail == true || checkFailPass == true) {
+                    Mess = '<h6>Fail!!!</h6>';
+                } else {
+                    $(".form-reg input#username").val("");
+                    $(".form-reg input#email").val("");
+                    $(".form-reg input#password").val("");
+
+                    window.localStorage.setItem('kidszone-username', txtName);
+                    window.localStorage.setItem('kidszone-email', contentMail);
+                    window.localStorage.setItem('kidszone-password', txtPass);
+                    window.localStorage.setItem('kidszone-login', "false");
+
+                    Mess = '<h6>Success!!!</h6><p>Thank you for signing up for an account</p> \
+                    <p id="username">Username:<span>' + txtName + '</span></p> \
+                    <p id="email">Email:<span>' + contentMail + '</span></p> \
+                    <p id="password">Password:<span>' + txtPass + '</span></p>';
+                }
+                if (checkFailName == true) {
+                    Mess += '<p>Invalid Name</p>';
+                }
+                if (checkFailMail == true) {
+                    Mess += '<p>Invalid Mail</p>';
+                }
+                if (checkFailPass == true) {
+                    Mess += '<p>Invalid Password</p>';
+                }
+                $(".modal-body").html(Mess);
+            });
+
+            $(".form-login button").click(function () {
+                $(".modal-body").html("");
+                var txtName = $(".form-login input#username").val();
+                var checkFailName = false;
+                if (txtName == "") {
+                    checkFailName = true;
+                }
+                var txtPass = $(".form-login input#password").val();
+                var checkFailPass = false;
+                if (txtPass == "") {
+                    checkFailPass = true;
+                }
+                var Mess = '';
+                if (checkFailName == true || checkFailPass == true) {
+                    Mess = '<h6>Fail!!!</h6>';
+                } else {
+                    var nameLocal = window.localStorage.getItem('kidszone-username');
+                    var mailLocal = window.localStorage.getItem('kidszone-email');
+                    var passwordLocal = window.localStorage.getItem('kidszone-password');
+                    if ((txtName == nameLocal || txtName == mailLocal) && (txtPass == passwordLocal)) {
+                        $(".form-reg input#username").val("");
+                        $(".form-reg input#password").val("");
+
+                        $(".sidebar #nav-tab #nav-home-tab").addClass("hidden");
+                        $(".sidebar #nav-tabContent #nav-home").addClass("hidden");
+                        $(".sidebar #nav-tab #nav-profile-tab").addClass("hidden");
+                        $(".sidebar #nav-tabContent #nav-profile").addClass("hidden");
+
+                        $("#nav-tab #nav-contact-tab").removeClass("hidden");
+                        $(".sidebar #nav-tabContent #nav-contact").addClass("active show");
+                        $(".sidebar #nav-tabContent #nav-contact").removeClass("hidden");
+
+                        window.localStorage.setItem('kidszone-login', "true");
+                        Mess = '<h6>Success!!!</h6>';
+
+                        $(".form-user #name-user").html(nameLocal);
+                    } else {
+                        Mess = '<h6>Fail!!!</h6><p>Invalid Username or Password</p>';
+                    }
+                }
+                if (checkFailName == true) {
+                    Mess += '<p>Invalid Name</p>';
+                }
+                if (checkFailPass == true) {
+                    Mess += '<p>Invalid Password</p>';
+                }
+                $(".modal-body").html(Mess);
+            });
+
+            $(".form-user button").click(function () {
+                window.localStorage.setItem('kidszone-login', "false");
+
+                $(".sidebar #nav-tab #nav-home-tab").removeClass("hidden");
+                $(".sidebar #nav-tabContent #nav-home").removeClass("hidden");
+                $(".sidebar #nav-tabContent #nav-home").addClass("active show");
+
+                $(".sidebar #nav-tab #nav-profile-tab").removeClass("hidden");
+                $(".sidebar #nav-tabContent #nav-profile").removeClass("hidden");
+
+                $("#nav-tab #nav-contact-tab").addClass("hidden");
+                $(".sidebar #nav-tabContent #nav-contact").removeClass("active show");
+                $(".sidebar #nav-tabContent #nav-contact").addClass("hidden");
+            });
+
+            var checkLogin =  window.localStorage.getItem('kidszone-login');
+            if (checkLogin == "true") {
+                $(".sidebar #nav-tab #nav-home-tab").addClass("hidden");
+                $(".sidebar #nav-tabContent #nav-home").addClass("hidden");
+
+                $(".sidebar #nav-tab #nav-profile-tab").addClass("hidden");
+                $(".sidebar #nav-tabContent #nav-profile").addClass("hidden");
+
+                $("#nav-tab #nav-contact-tab").removeClass("hidden");
+                $(".sidebar #nav-tabContent #nav-contact").addClass("active show");
+                $(".sidebar #nav-tabContent #nav-contact").removeClass("hidden");
+
+                var nameLocal =  window.localStorage.getItem('kidszone-username');
+                $(".form-user #name-user").html(nameLocal);
+            } else {
+                $(".sidebar #nav-tab #nav-home-tab").removeClass("hidden");
+                $(".sidebar #nav-tabContent #nav-home").removeClass("hidden");
+                $(".sidebar #nav-tabContent #nav-home").addClass("active show");
+
+                $(".sidebar #nav-tab #nav-profile-tab").removeClass("hidden");
+                $(".sidebar #nav-tabContent #nav-profile").removeClass("hidden");
+
+                $("#nav-tab #nav-contact-tab").addClass("hidden");
+                $(".sidebar #nav-tabContent #nav-contact").removeClass("active show");
+                $(".sidebar #nav-tabContent #nav-contact").addClass("hidden");
+            }
+        </script>
+    </div>
+    <div class="thumbnail-listing sidebar-box">
+        <div class="listing-single-tab">
+            <h5 class="h-text">Latest News</h5>
+            <div class="bs-pagination-wrapper">
+                <div class="listing-thumbnail">
+                    <div class="listing-item-thumbnail ">
+                        <div class="item-inner">
+                            <a href="./physical.html?exercise-idpost8">
+                                <div class="featured-image">
+                                    <span style="background-image: url(./img/post/physical-post-8.jpg);"></span>
+                                </div>
+                                <p class="featured-title">Exercises are good for children's moods</p>
+                            </a>
+                        </div>
+                        <div class="item-inner">
+                            <a href="./physical.html?exercise-idpost13">
+                                <div class="featured-image">
+                                    <span style="background-image: url(./img/post/physical-post-13.jpg);"></span>
+                                </div>
+                                <p class="featured-title">Exercise helps reduce obesity in children</p>
+                            </a>
+                        </div>
+                        <div class="item-inner">
+                            <a href="./physical.html?exercise-idpost9">
+                                <div class="featured-image">
+                                    <span style="background-image: url(./img/post/physical-post-9.jpg);"></span>
+                                </div>
+                                <p class="featured-title">Benefits of giving children exercise from a young age</p>
+                            </a>
+                        </div>
+                        <div class="item-inner">
+                            <a href="./physical.html?physical-idpost2">
+                                <div class="featured-image">
+                                    <span style="background-image: url(./img/post/physical-post-2.jpg);"></span>
+                                </div>
+                                <p class="featured-title">14 Fruits that make your baby smarter, moms need to remember
+                                </p>
+                            </a>
+                        </div>
+                        <div class="item-inner">
+                            <a href="./physical.html?physical-idpost7">
+                                <div class="featured-image">
+                                    <span style="background-image: url(./img/post/physical-post-7.jpg);"></span>
+                                </div>
+                                <p class="featured-title">Top 10 calcium supplements for babies</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popular-categories sidebar-box">
+        <h5 class="h-text">Popular Pages</h5>
+        <div class="bs-pagination-wrapper">
+            <ul class="bs-popular-terms-list">
+            </ul>
+        </div>
+    </div>
+    <script>
+        $.getJSON("json/sitemap.json", function (data) {
+			for (var i = 0; i < data.length; i++) {
+                if (data[i].type_page == "category") {
+                    var content = "";
+                    // for (var j = 0; j < data[i].category.length; j++) {
+                    //     content += '<li class="bs-popular-term-item"><a href="' + data[i].category[j].url + '">+ ' + data[i].category[j].name +'<span class="term-count">' + data[i].category[j].post_numbers + '</span></a></li>';
+                    // }
+                    // if (content != "") {
+                    //     content = '<ul>' + content + '</ul>';
+                    // }
+                    $(".bs-popular-terms-list").append('<li class="bs-popular-term-item"><a href="' + data[i].url + '">' + data[i].name + '<span class="term-count">' + data[i].post_numbers + '</span></a>' + content + '</li>');
+                }				
+                if (data[i].type_page == "page") {
+					$(".bs-popular-terms-list").append('<li class="bs-popular-term-item"><a href="' + data[i].url + '">' + data[i].name + '</a></li>');
+				}
+			}
+		});
+    </script>
+</aside>
